@@ -1,1 +1,3 @@
 
+#include <cstdio> //including the printf library
+#inculde <array> //includes the array library
