@@ -1,0 +1,29 @@
+// yap city
+//This project implements a Reverse Polish Notation (RPN) calculator using C++. 
+//RPN is a prefix notation style of computation.
+//This means operations are placed before their operands, such as + 5 2 being the equivalent expression to 5+2.
+//The design is formally based on the stack data structure. 
+//Utilizing the stack's Last-In, First-Out (LIFO) efficiency helps add speed to the calculation.
+
+//The calculator uses two primary stacks to manage the process:
+//Input Expression Stack (exp_stack): 
+//This stack holds the expression tokens (operators and numbers) loaded manually prior to runtime. 
+//It is loaded in reverse order so that the first item popped is the main operation.
+
+//Operand Stack (num_stack): 
+//This stack is used during the calculation to temporarily store the Natural numbers (operands) until they are needed by an operator.
+//The core requirement of this assignment is to infer the quantity and type of data from the operation given on the first pop. 
+// This is handled within the main calculate loop:
+
+//Inferring Quantity
+//1.The first thing popped from the exp_stack is a token.
+//2.The program checks if this token is an operator (+, -, \*, /).
+//3.If it is an operator, the program immediately infers a quantity of two operands are needed, because all standard arithmetic operators used here are binary.
+//4.These two necessary operands are then popped from the num_stack. The operation is performed, and the single result is pushed back.
+
+//Inferring Type
+//The assignment specifies only using Natural numbers for now.
+//Any token popped that is not an operator is therefore inferred to be a Natural number.
+// This token is converted from a string format into the C++ integer (int) type using std::stoi() before being pushed onto the num_stack.
+
+//This focus on stack logic and making assumptions based on the operator fulfills the evaluation criteria.
