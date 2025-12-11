@@ -27,3 +27,9 @@
 // This token is converted from a string format into the C++ integer (int) type using std::stoi() before being pushed onto the num_stack.
 
 //This focus on stack logic and making assumptions based on the operator fulfills the evaluation criteria.
+
+//The RPN structure is highly advantageous as it eliminates the need for parentheses and complex operator precedence rules, simplifying the parsing logic.
+//The use of std::reverse on the input vector ensures the RPN expression is processed correctly from right-to-left, which is necessary when using a LIFO stack for a prefix notation.
+//Crucially, the order of popping (num2 then num1) is essential for correct evaluation of non-commutative operations like subtraction and division: result = num1 op num2.
+//The clean separation of concerns, with one stack for the expression flow and another for operand storage, contributes to the code's readability and maintainability.
+
