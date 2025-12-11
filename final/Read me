@@ -1,4 +1,4 @@
-// yap city
+//RPN Calculator Documentation
 //This project implements a Reverse Polish Notation (RPN) calculator using C++. 
 //RPN is a prefix notation style of computation.
 //This means operations are placed before their operands, such as + 5 2 being the equivalent expression to 5+2.

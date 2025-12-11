@@ -5,6 +5,7 @@
 #include <sstream>
 
 
+
 // Checks if a given string token is an arithmetic operator.
 bool is_operator(const std::string& token) {
     return token == "+" || token == "-" || token == "*" || token == "/";
